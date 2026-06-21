@@ -2,10 +2,10 @@ import telebot
 import sqlite3
 import logging
 from datetime import datetime
+import sys
 
 # ===== НАСТРОЙКИ =====
-BOT_TOKEN = "8913070096:AAGg4qgQ4Dlb_0-NZBVI4qOkCnoG9j_mGrU"
-
+BOT_TOKEN = sys.argv[1]
 # ===== ЛОГИРОВАНИЕ =====
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
